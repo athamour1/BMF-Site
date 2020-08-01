@@ -10295,6 +10295,7 @@ body {
   padding: 3rem;
   font-size: 90%;
 }
+
 @media (min-width: 992px) {
   .Contributor-section .project-text {
     padding: 5rem;
