@@ -10329,12 +10329,13 @@ body {
   margin-top: 5rem;
 }
 .contact-section .social a {
+  font-size: 3rem;
   text-align: center;
   height: 5rem;
   width: 5rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  line-height: 3rem;
+  line-height: 5rem;
   color: rgba(0, 0, 0, 0.8);
 }
 .contact-section .social a:hover {
