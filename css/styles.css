@@ -10181,16 +10181,16 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(231, 214, 43, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(231, 214, 43, 0.75);
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #E7D62B;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #E7D62B;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000000;
