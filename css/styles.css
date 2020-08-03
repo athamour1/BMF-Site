@@ -10181,7 +10181,7 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(231, 214, 43, 0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
     color: rgba(231, 214, 43, 0.75);
@@ -10190,7 +10190,7 @@ body {
     color: #E7D62B;
   }
   #mainNav.navbar-shrink {
-    background-color: #E7D62B;
+    background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000000;
