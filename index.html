@@ -34,55 +34,54 @@
         </nav>
 
         <!-- Masthead-->
-        <header class="masthead">  
+        <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                        <p class="mb-4 font-weight-bold text-uppercase">New year's eve in</p>
-                        <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                    
+                        <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">  </div>
+
                         <h1 class="text-white mx-auto mt-2 mb-5" id="timer">
                             <span id="timer-days"></span>
                             <span id="timer-hours"></span>
                             <span id="timer-mins"></span>
                         </h1>
-                    </div>
+
                     </div>
                 </div>
-            </div>-          
+            </div>-
             <script>
                 var endDate = new Date("Mar 15, 2021 12:00:00").getTime();
 
                 var timer = setInterval(function() {
-                
+
                     let now = new Date().getTime();
                     let t = endDate - now;
-                    
+
                     if (t >= 0) {
-                    
+
                         let days = Math.floor(t / (1000 * 60 * 60 * 24));
                         let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                         let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
                         let secs = Math.floor((t % (1000 * 60)) / 1000);
-                    
+
                         document.getElementById("timer-days").innerHTML = days;
-                    
+
                         document.getElementById("timer-hours").innerHTML = ("0"+hours).slice(-2);
-                    
+
                         document.getElementById("timer-mins").innerHTML = ("0"+mins).slice(-2);
-                    
-                    
+
+
                     } else {
-                
+
                         document.getElementById("timer").innerHTML = "The countdown is over!";
-                    
+
                     }
-                    
+
                 }, 1000);
-                    
+
 
               </script>
-        </header>   
+        </header>
 
         <!-- About-->
         <section class="about-section text-center" id="about">
