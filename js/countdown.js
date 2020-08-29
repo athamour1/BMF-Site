@@ -15,7 +15,7 @@ $(function () {
     /* =========================================
         COUNTDOWN 2
      ========================================= */
-    $('#clock-a').countdown('2020/09/11').on('update.countdown', function(event) {
+    $('#clock-a').countdown('2021/06/25').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<span class="h1 font-weight-bold">%w</span> week%!w'
         + '<span class="h1 font-weight-bold">%D</span> Days'));
