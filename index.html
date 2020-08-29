@@ -35,13 +35,13 @@
 
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <div class="rounded text-white shadow p-5 text-center mb-5">
+            <div class="container d-flex h-100 align-items-center mb-0">
+                <div class="mx-auto">
+                    <div class="rounded text-white shadow p-5 text-center">
                         <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">
-                            <span id="timer-days"></span>
-                            <span id="timer-hours"></span>
-                            <span id="timer-mins"></span>
+                            <span><h3 id="timer-days"></h3></span>
+                            <span><h3 id="timer-hours"></h3></span>
+                            <span><h3 id="timer-mins"></h3></span>
                     </div>
                 </div>
             </div>-
@@ -61,11 +61,11 @@
                         let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
                         let secs = Math.floor((t % (1000 * 60)) / 1000);
 
-                        document.getElementById("timer-days").innerHTML = days;
+                        document.getElementById("timer-days").innerHTML = days + " Days";
 
-                        document.getElementById("timer-hours").innerHTML = ("0"+hours).slice(-2);
+                        document.getElementById("timer-hours").innerHTML = ("0"+hours).slice(-2) + " Hours";
 
-                        document.getElementById("timer-mins").innerHTML = ("0"+mins).slice(-2);
+                        document.getElementById("timer-mins").innerHTML = ("0"+mins).slice(-2) + " Minutes";
 
 
                     } else {
