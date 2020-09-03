@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/countdown.css" rel="stylesheet" />
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -33,13 +35,18 @@
 
         <!-- Masthead-->
         <header class="masthead">
-           <!-- <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+            <div class="container d-flex h-100 align-items-center mb-0">
+                <div class="mx-auto">
+                    <div class="text-white p-5 text-center">
+                        <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">
+                            <span><h3 id="timer-days"></h3></span>
+                            <span><h3 id="timer-hours"></h3></span>
+                            <span><h3 id="timer-mins"></h3></span>
+                        </div>
                 </div>
-            </div>-->
+            </div>-
+          </div>
+            
         </header>
 
         <!-- About-->
@@ -294,5 +301,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/countdown.js"></script>
     </body>
 </html>
