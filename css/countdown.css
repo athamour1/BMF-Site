@@ -1,56 +1,130 @@
-.countdown {
-    text-transform: uppercase;
-    font-weight: bold;
+/* For PCs */
+
+@media (min-width: 1000px) {
+    .countdown {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px;
+        margin: 100px;
+    }
+
+    .countdown span {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: 8rem;
+        margin-left: 0.8rem;
+    }
+    /* 
+    .countdown span:first-of-type {
+        margin-left: 0;
+    } 
+    */
+
+    .countdown-circles {        
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+
+    .countdown-circles span {
+        padding: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: rgba(65, 65, 65, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 
+    .countdown-circles span:first-of-type {
+        margin-left: 0;
+    } 
+    */
+
+    body {
+        min-height: 100vh;
+    }
+
+    .rounded {
+        border-radius: 6rem !important;
+    }
+
+    .btn-demo {
+        padding: 0.5rem 2rem !important;
+        border-radius: 30rem !important;
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold !important;
+    }
+
+    .btn-demo:hover, .btn-demo:focus {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
 }
 
-.countdown span {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    font-size: 8rem;
-    margin-left: 0.8rem;
+/* For PHONEs */
+
+@media (min-width: 360px) {
+    .countdown {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .countdown span {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: 8rem;
+        margin-left: 0.8rem;
+    }
+
+    .countdown span:first-of-type {
+        margin-left: 0;
+    }
+
+    .countdown-circles {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .countdown-circles span {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: rgba(65, 65, 65, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .countdown-circles span:first-of-type {
+        margin-left: 0;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    .rounded {
+        border-radius: 5rem !important;
+    }
+
+    .btn-demo {
+        padding: 0.5rem 2rem !important;
+        border-radius: 30rem !important;
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold !important;
+    }
+
+    .btn-demo:hover, .btn-demo:focus {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.5);
+    }
 }
 
-.countdown span:first-of-type {
-    margin-left: 0;
-}
-
-.countdown-circles {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.countdown-circles span {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: rgba(65, 65, 65, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.countdown-circles span:first-of-type {
-    margin-left: 0;
-}
-
-body {
-    min-height: 100vh;
-}
-
-.rounded {
-    border-radius: 6rem !important;
-}
-
-.btn-demo {
-    padding: 0.5rem 2rem !important;
-    border-radius: 30rem !important;
-    background: rgba(255, 255, 255, 0.3);
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold !important;
-}
-
-.btn-demo:hover, .btn-demo:focus {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.5);
-}
